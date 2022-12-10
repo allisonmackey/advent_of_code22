@@ -5,7 +5,7 @@ class ElfCalorieCounter
     @data = scrub_data(file_data)
   end
 
-  def self.run_count
+  def run_count
     @data.each.with_index(1) do |array, index|
       if @highest_sum < array.sum
         @highest_sum = array.sum
