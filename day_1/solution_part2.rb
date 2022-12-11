@@ -9,4 +9,5 @@ def scrub_data_and_count(data)
 end
 
 file_data = File.read("input.txt")
-puts scrub_data_and_count(file_data).last
+puts scrub_data_and_count(file_data).last(3).sum
+
