@@ -8,5 +8,7 @@ def scrub_data_and_count(data)
     .sort
 end
 
-file_data = File.read("input.txt")
-puts scrub_data_and_count(file_data).last
+data = scrub_data_and_count(File.read("input.txt"))
+
+puts "puzzle 1 answer: #{data.last}"
+puts "puzzle 2 answer: #{data.last(3).sum}"
